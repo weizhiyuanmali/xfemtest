@@ -1,0 +1,11 @@
+!振幅为A，半波长为L，（单位制为mm，t，S）
+A=5E-3
+L=30E-3
+
+*do,i,0,180,1, 
+*SET,x,L*i/180 
+*SET,y,A*cos(3.1415926*i/180) 
+k,i+1,x,y 
+*enddo  
+
+Bsplin,all
